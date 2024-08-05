@@ -1,0 +1,84 @@
+// Background synaptic activity in FS basket cells 2018 around 30 Hz to simulate the presynpatic cell firing in Gap junctions experiment. according to Tamas Somogyi 2000 
+//Alexandra Tzilivaki.
+
+numberpvs=15//15
+
+
+
+ampaweightin=0.0003
+nmdaweightin=1.0e-3
+
+ 
+
+
+objref  pevstiminh[numberpvs][excitatory_synapses], devstiminh[numberpvs][excitatory_synapses] 
+objref ran, rdend
+
+objref pampain_back[numberpvs][excitatory_synapses], pnmdain_back[numberpvs][excitatory_synapses]
+objref pncampainback[numberpvs][excitatory_synapses], pncnmdainback[numberpvs][excitatory_synapses]
+
+
+mean=0.01
+
+
+
+ 
+
+
+
+objref rp
+rp = new Random()
+rp.poisson(mean)
+print"123"
+objref stimvectorE[numberpvs][excitatory_synapses]
+
+
+for c=0, numberpvs-1{
+for t=0,excitatory_synapses-1{
+	stimvectorE[c][t]= new Vector()
+	for k=0,1000-1{         // $1 the tstop 
+		if(rp.repick()){
+			stimvectorE[c][t].append(k)
+		}
+	}
+}
+}
+
+
+proc call_vecstim() {
+rdend=new Random($1)
+
+edendritis=rdend.discunif(0,9)
+
+ran = new Random($1)
+PIDb = ran.uniform(0, 1)
+
+for cell=0,numberpvs-1{
+// excitatory synapses in dendrites
+for syn=0,excitatory_synapses-1 {
+//edendritis=eDendperSyn.x[syn]
+	       pevstiminh[cell][syn] = new VecStim(0.5)
+	       pevstiminh[cell][syn].delay = 250
+	       pevstiminh[cell][syn].play(stimvectorE[cell][syn])
+	       PIDb=ran.repick()
+edendritis=rdend.repick()
+print "edendritis", edendritis
+			InterneuronList.o(cell).dend[edendritis] pampain_back[cell][syn]=new myAMPA(PIDb)
+			InterneuronList.o(cell).dend[edendritis] pnmdain_back[cell][syn]=new myNMDA(PIDb)
+
+			pncampainback[cell][syn] = new NetCon(pevstiminh[cell][syn], pampain_back[cell][syn], -20, 0, ampaweightin)
+			pncnmdainback[cell][syn] = new NetCon(pevstiminh[cell][syn], pnmdain_back[cell][syn], -20, 0, nmdaweightin)
+	}
+	
+
+}
+
+} // procedure
+
+
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+	/* Investigate dendritic integration , Alexandra Tzilivaki 2015*/
+
+	//Initialize NEURON
+	load_file("nrngui.hoc")   
+        v_init=-65      // Vrest
+	cvode.active(0)     
+	//-----Objects for record data
+	objref cv
+	cv=new CVode(0)
+	tstop=2000            
+	steps_per_ms=100
+	dt=1/steps_per_ms
+	n=int(tstop/dt)
+
+	objref all_msec
+	all_msec = new Vector(n,0)
+	for q=0,n-1 {all_msec.x[q]=q*dt}
+	
+	
+	
+
+	
+	  
+xopen("cell.hoc") // template
+numberins=1
+ncell=numberins
+
+objref InterneuronCells[numberins],  InterneuronList, ranlist
+InterneuronList=new List()
+ranlist=new List()
+for i=0,numberins-1{
+InterneuronCells[i]= new InterneuronCell()
+InterneuronList.append(InterneuronCells[i])
+}
+
+xopen("../bash_templates/basic-graphics.hoc") 
+for j=0, (numberins-1) {addgraph("InterneuronList.o(j).soma.v(0.5)",-90,50)} 
+
+
+
+//     objref syn
+maxsyndend=15//20//15//0//100 //12  // This is the number of maximum synapses activated in each branch.
+
+//-------------------------------------------------------------------------------------------------------------------------------		
+objref Synaptic_Stim
+Synaptic_Stim = new NetStim(0.5)                            
+Synaptic_Stim.interval =20000  //0ne burst
+Synaptic_Stim.number =1
+Synaptic_Stim.start =500
+
+//----------------------------------------------------Record and save -----------------------------------------------------------
+objref vsoma[numberins], somaref[numberins]
+
+strdef data_dir, tempstr
+
+sprint(data_dir,"DATA/IO/control15")
+sprint(tempstr,"mkdir -p %s", data_dir)
+system(tempstr)
+
+proc record(){
+
+for cn=0,numberins-1{
+vsoma[cn]=new Vector()
+vsoma[cn].record(&InterneuronList.o(cn).soma.v(0.5))
+}
+}
+objref fo
+strdef fno
+proc save(){
+for cn=0,numberins-1{
+sprint(tempstr, "%s/synapses_%d.dat", data_dir,$1)
+somaref[cn]= new File()
+somaref[cn].wopen(tempstr)
+vsoma[cn].printf(somaref[cn],"%g\n")
+somaref[cn].close()
+}
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------
+	objref ampa[maxsyndend] , conampa[maxsyndend] , nmda[maxsyndend] , connmda[maxsyndend]			
+	objref null, fsyndend
+
+
+
+//==============================================================================================================================
+objref nmda_amplitude_vec,nmda_tplay,ampa_syn,nmda_syn,vec_nmda_amp,vec_nmda_gmax,graph_nmda_amp
+nmda_tplay=new Vector()
+for dendrite =0,0 { 
+
+
+	
+
+	strdef running
+		sprint(running,"Dendrite_%d",dendrite)
+				
+
+		ascendend = 1 //initial synaptic contacts
+		for kk = 0, maxsyndend-1 {         
+		//	print "MAXSYNDEND IS: ",maxsyndend
+			//print "ascendend IS: ",ascendend
+
+			if (ascendend <= maxsyndend) { 
+				//	print "ready to stimulate ", ascendend, " synapses"
+				for syn = 0, maxsyndend-1 {
+					ampa[syn] = null
+					nmda[syn] = null
+				}
+
+				 InterneuronList.o(0).dend[dendrite].nseg=ascendend 
+				cum = (1/ InterneuronList.o(0).dend[dendrite].nseg)/2
+				
+				for syn=0, InterneuronList.o(0).dend[dendrite].nseg-1 { 
+					InterneuronList.o(0).dend[dendrite] {ampa[syn] = new myAMPA(0.5)   }
+					 InterneuronList.o(0).dend[dendrite] {nmda[syn] = new myNMDA(0.5)}
+                                          
+                                          
+                                          
+                                     
+					cum = cum + (1/ InterneuronList.o(0).dend[dendrite].nseg)
+                            
+				}
+
+				for syn=0, (ascendend-1) { 
+					fsyndend = new Random(2)
+					delstim=fsyndend.normal(0.6, 0.2)
+					delstim=fsyndend.repick()
+					if (delstim<0) {delstim=delstim*(-1) }  
+
+					conampa[syn] = new NetCon(Synaptic_Stim, ampa[syn], -20, delstim, 0.3e-3)  
+					connmda[syn] = new NetCon(Synaptic_Stim, nmda[syn], -20, delstim,1.0e-3) 
+					
+                          
+				}
+				
+                              
+				print "Now stimulating ",ascendend, " synapses on dendrite ",dendrite
+				record()
+				run()
+
+				                        				save(ascendend) 
+                         
+                                ascendend = ascendend + 1 
+
+			}
+		} //while not reached max synaptic contacts
+                        
+	  } //for dendrite
+
+
+
+
+
+
+

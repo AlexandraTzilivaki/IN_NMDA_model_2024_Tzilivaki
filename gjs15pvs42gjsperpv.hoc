@@ -1,0 +1,2856 @@
+//gjs
+objref GAP[645]
+ggap=0.427 // conductance according to Tamas Somogyi 2000
+
+
+for z=0,644{//49 {
+GAP[z] = new Gap(0.5)
+}
+// cell 0 1
+
+InterneuronList.o(0).dend[2] GAP[0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[0].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[0]   GAP[1].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[1]    GAP[2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(0).dend[2] GAP[3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[3].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[4]   GAP[4].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[1]    GAP[5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(0).dend[2] GAP[6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[2] GAP[6].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[2]   GAP[7].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[1]    GAP[8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(0).dend[2] GAP[9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[3] GAP[9].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[2]   GAP[10].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[1]    GAP[11].target(.5)
+
+
+
+
+InterneuronList.o(0).dend[2] GAP[12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[12].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[4]   GAP[13].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[2]    GAP[14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(0).dend[2] GAP[15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[15].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[9]   GAP[16].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[0]    GAP[17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(0).dend[2] GAP[18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[2] GAP[18].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[7]   GAP[19].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[3]    GAP[20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(0).dend[2] GAP[21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[3] GAP[21].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[5]   GAP[22].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[8]    GAP[23].target(.5)
+
+
+
+
+InterneuronList.o(0).dend[2] GAP[24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[24].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[2]   GAP[25].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[2]    GAP[26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(0).dend[2] GAP[27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[27].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[9]   GAP[28].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[1]    GAP[29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(0).dend[2] GAP[30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[31].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[6]   GAP[32].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[0]    GAP[33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(0).dend[2] GAP[34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[8] GAP[34].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[7]   GAP[35].target(.5)
+
+InterneuronList.o(0).dend[3] GAP[36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[3]    GAP[36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(0).dend[0] GAP[37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[37].target(.5)
+
+InterneuronList.o(0).dend[5] GAP[38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[38].target(.5)
+
+InterneuronList.o(0).dend[1] GAP[39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(0).dend[7] GAP[40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[8] GAP[40].target(.5)
+
+InterneuronList.o(0).dend[4] GAP[41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[41].target(.5)
+
+InterneuronList.o(0).dend[2] GAP[42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[6] GAP[42].target(.5)
+
+//00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cell20000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+//gjs
+
+// cell 0 1
+
+InterneuronList.o(1).dend[2] GAP[43+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[43+0].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[4]   GAP[43+1].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[1]    GAP[43+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(1).dend[2] GAP[43+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[43+3].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[2]   GAP[43+4].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[1]    GAP[43+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(1).dend[2] GAP[43+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[2] GAP[43+6].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[4]   GAP[43+7].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[2]    GAP[43+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(1).dend[2] GAP[43+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[3] GAP[43+9].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[4]   GAP[43+10].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[1]    GAP[43+11].target(.5)
+
+
+
+
+InterneuronList.o(1).dend[2] GAP[43+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[43+12].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[2]   GAP[43+13].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[1]    GAP[43+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(1).dend[2] GAP[43+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[43+15].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[4]   GAP[43+16].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[1]    GAP[43+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(1).dend[2] GAP[43+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[2] GAP[43+18].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[2]   GAP[43+19].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[8]    GAP[43+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(1).dend[2] GAP[43+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[3] GAP[43+21].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[7]   GAP[43+22].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[6]    GAP[43+23].target(.5)
+
+
+
+
+InterneuronList.o(1).dend[2] GAP[43+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[43+24].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[0]   GAP[43+25].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[5]    GAP[43+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(1).dend[2] GAP[43+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[0] GAP[43+27].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[4]   GAP[43+28].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[1]    GAP[43+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(1).dend[2] GAP[43+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[43+31].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[2]   GAP[43+32].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[1]    GAP[43+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(1).dend[2] GAP[43+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[43+34].target(.5)
+
+InterneuronList.o(1).dend[4] GAP[43+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[2]   GAP[43+35].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[1]    GAP[43+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(1).dend[0] GAP[43+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[43+37].target(.5)
+
+InterneuronList.o(1).dend[5] GAP[43+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[43+38].target(.5)
+
+InterneuronList.o(1).dend[0] GAP[43+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[43+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(1).dend[7] GAP[43+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[8] GAP[43+40].target(.5)
+
+InterneuronList.o(1).dend[3] GAP[43+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[43+41].target(.5)
+
+InterneuronList.o(1).dend[2] GAP[43+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[1] GAP[43+42].target(.5)
+
+
+//0000000000000000000000000000000000000000000000000000000000000cell3000000000000000000000
+
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*2)+0].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[6]   GAP[(43*2)+1].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[7]    GAP[(43*2)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*2)+3].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[2]   GAP[(43*2)+4].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[2]    GAP[(43*2)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[2] GAP[(43*2)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[4]   GAP[(43*2)+7].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[2]    GAP[(43*2)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[3] GAP[(43*2)+9].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[2]   GAP[(43*2)+10].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[1]    GAP[(43*2)+11].target(.5)
+
+
+
+
+InterneuronList.o(2).dend[9] GAP[(43*2)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*2)+12].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[7]   GAP[(43*2)+13].target(.5)
+
+InterneuronList.o(2).dend[9] GAP[(43*2)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[0]    GAP[(43*2)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*2)+15].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[2]   GAP[(43*2)+16].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[1]    GAP[(43*2)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[2] GAP[(43*2)+18].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[2]   GAP[(43*2)+19].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[2]    GAP[(43*2)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[3] GAP[(43*2)+21].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[2]   GAP[(43*2)+22].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[1]    GAP[(43*2)+23].target(.5)
+
+
+
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*2)+24].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[2]   GAP[(43*2)+25].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[1]    GAP[(43*2)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*2)+27].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[2]   GAP[(43*2)+28].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[1]    GAP[(43*2)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[(43*2)+31].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[2]   GAP[(43*2)+32].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[2]    GAP[(43*2)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[(43*2)+34].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[4]   GAP[(43*2)+35].target(.5)
+
+InterneuronList.o(2).dend[3] GAP[(43*2)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[1]    GAP[(43*2)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(2).dend[0] GAP[(43*2)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*2)+37].target(.5)
+
+InterneuronList.o(2).dend[5] GAP[(43*2)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*2)+38].target(.5)
+
+InterneuronList.o(2).dend[0] GAP[(43*2)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*2)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[8] GAP[(43*2)+40].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*2)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*2)+41].target(.5)
+
+InterneuronList.o(2).dend[2] GAP[(43*2)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[1] GAP[(43*2)+42].target(.5)
+
+
+//000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*3)+0].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[2]   GAP[(43*3)+1].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[1]    GAP[(43*3)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*3)+3].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[0]   GAP[(43*3)+4].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[9]    GAP[(43*3)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*3)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*3)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[2]   GAP[(43*3)+7].target(.5)
+
+InterneuronList.o(3).dend[0] GAP[(43*3)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[9]    GAP[(43*3)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[3] GAP[(43*3)+9].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[4]   GAP[(43*3)+10].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[2]    GAP[(43*3)+11].target(.5)
+
+
+
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*3)+12].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[2]   GAP[(43*3)+13].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[1]    GAP[(43*3)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*3)+15].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[2]   GAP[(43*3)+16].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[2]    GAP[(43*3)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[2] GAP[(43*3)+18].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[2]   GAP[(43*3)+19].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[1]    GAP[(43*3)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[3] GAP[(43*3)+21].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[2]   GAP[(43*3)+22].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[2]    GAP[(43*3)+23].target(.5)
+
+
+
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*3)+24].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[2]   GAP[(43*3)+25].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[1]    GAP[(43*3)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*3)+27].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[2]   GAP[(43*3)+28].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[1]    GAP[(43*3)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[(43*3)+31].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[2]   GAP[(43*3)+32].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[1]    GAP[(43*3)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[(43*3)+34].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[2]   GAP[(43*3)+35].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*3)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[1]    GAP[(43*3)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(3).dend[0] GAP[(43*3)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*3)+37].target(.5)
+
+InterneuronList.o(3).dend[5] GAP[(43*3)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*3)+38].target(.5)
+
+InterneuronList.o(3).dend[1] GAP[(43*3)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*3)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(3).dend[7] GAP[(43*3)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*3)+40].target(.5)
+
+InterneuronList.o(3).dend[4] GAP[(43*3)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*3)+41].target(.5)
+
+InterneuronList.o(3).dend[2] GAP[(43*3)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[1] GAP[(43*3)+42].target(.5)
+
+//00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*4)+0].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[2]   GAP[(43*4)+1].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[1]    GAP[(43*4)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*4)+3].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[2]   GAP[(43*4)+4].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[1]    GAP[(43*4)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*4)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*4)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[2]   GAP[(43*4)+7].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[1]    GAP[(43*4)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*4)+9].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[2]   GAP[(43*4)+10].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*4)+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[2]    GAP[(43*4)+11].target(.5)
+
+
+
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*4)+12].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[2]   GAP[(43*4)+13].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[1]    GAP[(43*4)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*4)+15].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[2]   GAP[(43*4)+16].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[1]    GAP[(43*4)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[2] GAP[(43*4)+18].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[2]   GAP[(43*4)+19].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[2]    GAP[(43*4)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[3] GAP[(43*4)+21].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[4]   GAP[(43*4)+22].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[2]    GAP[(43*4)+23].target(.5)
+
+
+
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*4)+24].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[4]   GAP[(43*4)+25].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[1]    GAP[(43*4)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*4)+27].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[4]   GAP[(43*4)+28].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[2]    GAP[(43*4)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[(43*4)+31].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[9]   GAP[(43*4)+32].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[9]    GAP[(43*4)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[(43*4)+34].target(.5)
+
+InterneuronList.o(4).dend[4] GAP[(43*4)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[1]   GAP[(43*4)+35].target(.5)
+
+InterneuronList.o(4).dend[3] GAP[(43*4)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[4]    GAP[(43*4)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(4).dend[0] GAP[(43*4)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*4)+37].target(.5)
+
+InterneuronList.o(4).dend[5] GAP[(43*4)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*4)+38].target(.5)
+
+InterneuronList.o(4).dend[0] GAP[(43*4)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*4)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(4).dend[2] GAP[(43*4)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[8] GAP[(43*4)+40].target(.5)
+
+InterneuronList.o(4).dend[7] GAP[(43*4)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[7] GAP[(43*4)+41].target(.5)
+
+InterneuronList.o(4).dend[9] GAP[(43*4)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[7] GAP[(43*4)+42].target(.5)
+
+
+//00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*5)+0].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[2]   GAP[(43*5)+1].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[2]    GAP[(43*5)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*5)+3].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[4]   GAP[(43*5)+4].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[2]    GAP[(43*5)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*5)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*5)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[2]   GAP[(43*5)+7].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[2]    GAP[(43*5)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*5)+9].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[9]   GAP[(43*5)+10].target(.5)
+
+InterneuronList.o(3).dend[3] GAP[(43*5)+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[1]    GAP[(43*5)+11].target(.5)
+
+
+
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[2] GAP[(43*5)+12].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[2]   GAP[(43*5)+13].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[1]    GAP[(43*5)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*5)+15].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[4]   GAP[(43*5)+16].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[2]    GAP[(43*5)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[2] GAP[(43*5)+18].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[4]   GAP[(43*5)+19].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[0]    GAP[(43*5)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(5).dend[0] GAP[(43*5)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[3] GAP[(43*5)+21].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[5]   GAP[(43*5)+22].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[7]    GAP[(43*5)+23].target(.5)
+
+
+
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*5)+24].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[2]   GAP[(43*5)+25].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[1]    GAP[(43*5)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*5)+27].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[4]   GAP[(43*5)+28].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[1]    GAP[(43*5)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[(43*5)+31].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[2]   GAP[(43*5)+32].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[1]    GAP[(43*5)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(5).dend[2] GAP[(43*5)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[(43*5)+34].target(.5)
+
+InterneuronList.o(5).dend[4] GAP[(43*5)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[9]   GAP[(43*5)+35].target(.5)
+
+InterneuronList.o(5).dend[3] GAP[(43*5)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[6]    GAP[(43*5)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(5).dend[0] GAP[(43*5)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*5)+37].target(.5)
+
+InterneuronList.o(5).dend[5] GAP[(43*5)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*5)+38].target(.5)
+
+InterneuronList.o(5).dend[8] GAP[(43*5)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*5)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(5).dend[1] GAP[(43*5)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*5)+40].target(.5)
+
+InterneuronList.o(5).dend[6] GAP[(43*5)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[2] GAP[(43*5)+41].target(.5)
+
+InterneuronList.o(5).dend[5] GAP[(43*5)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[0] GAP[(43*5)+42].target(.5)
+
+
+
+//0000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*6)+0].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[9]   GAP[(43*6)+1].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[6]    GAP[(43*6)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*6)+3].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[9]   GAP[(43*6)+4].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[6]    GAP[(43*6)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*6)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*6)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[9]   GAP[(43*6)+7].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[6]    GAP[(43*6)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*6)+9].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[9]   GAP[(43*6)+10].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[6]    GAP[(43*6)+11].target(.5)
+
+
+
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[2] GAP[(43*6)+12].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[9]   GAP[(43*6)+13].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[6]    GAP[(43*6)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*6)+15].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[9]   GAP[(43*6)+16].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[6]    GAP[(43*6)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[2] GAP[(43*6)+18].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[9]   GAP[(43*6)+19].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[6]    GAP[(43*6)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[3] GAP[(43*6)+21].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[9]   GAP[(43*6)+22].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[6]    GAP[(43*6)+23].target(.5)
+
+
+
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*6)+24].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[9]   GAP[(43*6)+25].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[6]    GAP[(43*6)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*6)+27].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[9]   GAP[(43*6)+28].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[6]    GAP[(43*6)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[(43*6)+31].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[9]   GAP[(43*6)+32].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[6]    GAP[(43*6)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(6).dend[2] GAP[(43*6)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[(43*6)+34].target(.5)
+
+InterneuronList.o(6).dend[4] GAP[(43*6)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[9]   GAP[(43*6)+35].target(.5)
+
+InterneuronList.o(6).dend[3] GAP[(43*6)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[6]    GAP[(43*6)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(6).dend[0] GAP[(43*6)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*6)+37].target(.5)
+
+InterneuronList.o(6).dend[5] GAP[(43*6)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*6)+38].target(.5)
+
+InterneuronList.o(6).dend[8] GAP[(43*6)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*6)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(6).dend[1] GAP[(43*6)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*6)+40].target(.5)
+
+InterneuronList.o(6).dend[6] GAP[(43*6)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[2] GAP[(43*6)+41].target(.5)
+
+InterneuronList.o(6).dend[5] GAP[(43*6)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[0] GAP[(43*6)+42].target(.5)
+
+
+//00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*7)+0].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[9]   GAP[(43*7)+1].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[6]    GAP[(43*7)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*7)+3].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[9]   GAP[(43*7)+4].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[6]    GAP[(43*7)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*7)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*7)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[9]   GAP[(43*7)+7].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[6]    GAP[(43*7)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*7)+9].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[9]   GAP[(43*7)+10].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[6]    GAP[(43*7)+11].target(.5)
+
+
+
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[2] GAP[(43*7)+12].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[9]   GAP[(43*7)+13].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[6]    GAP[(43*7)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*7)+15].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[9]   GAP[(43*7)+16].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[6]    GAP[(43*7)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*7)+18].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[9]   GAP[(43*7)+19].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[6]    GAP[(43*7)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[3] GAP[(43*7)+21].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[9]   GAP[(43*7)+22].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[6]    GAP[(43*7)+23].target(.5)
+
+
+
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*7)+24].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[9]   GAP[(43*7)+25].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[6]    GAP[(43*7)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*7)+27].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[9]   GAP[(43*7)+28].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[6]    GAP[(43*7)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[(43*7)+31].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[9]   GAP[(43*7)+32].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[6]    GAP[(43*7)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(7).dend[2] GAP[(43*7)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[(43*7)+34].target(.5)
+
+InterneuronList.o(7).dend[4] GAP[(43*7)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[9]   GAP[(43*7)+35].target(.5)
+
+InterneuronList.o(7).dend[3] GAP[(43*7)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[6]    GAP[(43*7)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(7).dend[0] GAP[(43*7)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*7)+37].target(.5)
+
+InterneuronList.o(7).dend[5] GAP[(43*7)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*7)+38].target(.5)
+
+InterneuronList.o(7).dend[8] GAP[(43*7)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*7)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(7).dend[1] GAP[(43*7)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*7)+40].target(.5)
+
+InterneuronList.o(7).dend[6] GAP[(43*7)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[2] GAP[(43*7)+41].target(.5)
+
+InterneuronList.o(7).dend[5] GAP[(43*7)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[0] GAP[(43*7)+42].target(.5)
+
+
+//00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*8)+0].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[9]   GAP[(43*8)+1].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[6]    GAP[(43*8)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*8)+3].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[9]   GAP[(43*8)+4].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[6]    GAP[(43*8)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*8)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*8)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[9]   GAP[(43*8)+7].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[6]    GAP[(43*8)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*8)+9].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[9]   GAP[(43*8)+10].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[6]    GAP[(43*8)+11].target(.5)
+
+
+
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[2] GAP[(43*8)+12].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[9]   GAP[(43*8)+13].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[6]    GAP[(43*8)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*8)+15].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[9]   GAP[(43*8)+16].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[6]    GAP[(43*8)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*8)+18].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[9]   GAP[(43*8)+19].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[6]    GAP[(43*8)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[3] GAP[(43*8)+21].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[9]   GAP[(43*8)+22].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[6]    GAP[(43*8)+23].target(.5)
+
+
+
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*8)+24].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[9]   GAP[(43*8)+25].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[6]    GAP[(43*8)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*8)+27].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[9]   GAP[(43*8)+28].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[6]    GAP[(43*8)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[(43*8)+31].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[9]   GAP[(43*8)+32].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[6]    GAP[(43*8)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(8).dend[2] GAP[(43*8)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[(43*8)+34].target(.5)
+
+InterneuronList.o(8).dend[4] GAP[(43*8)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[9]   GAP[(43*8)+35].target(.5)
+
+InterneuronList.o(8).dend[3] GAP[(43*8)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[6]    GAP[(43*8)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(8).dend[0] GAP[(43*8)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*8)+37].target(.5)
+
+InterneuronList.o(8).dend[5] GAP[(43*8)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*8)+38].target(.5)
+
+InterneuronList.o(8).dend[8] GAP[(43*8)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*8)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(8).dend[1] GAP[(43*8)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*8)+40].target(.5)
+
+InterneuronList.o(8).dend[6] GAP[(43*8)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[2] GAP[(43*8)+41].target(.5)
+
+InterneuronList.o(8).dend[5] GAP[(43*8)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[0] GAP[(43*8)+42].target(.5)
+
+
+//00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*9)+0].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[9]   GAP[(43*9)+1].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[6]    GAP[(43*9)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*9)+3].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[9]   GAP[(43*9)+4].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[6]    GAP[(43*9)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*9)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*9)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[9]   GAP[(43*9)+7].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[6]    GAP[(43*9)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*9)+9].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[9]   GAP[(43*9)+10].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[6]    GAP[(43*9)+11].target(.5)
+
+
+
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[2] GAP[(43*9)+12].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[9]   GAP[(43*9)+13].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[6]    GAP[(43*9)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*9)+15].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[9]   GAP[(43*9)+16].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[6]    GAP[(43*9)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*9)+18].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[9]   GAP[(43*9)+19].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[6]    GAP[(43*9)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[3] GAP[(43*9)+21].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[9]   GAP[(43*9)+22].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[6]    GAP[(43*9)+23].target(.5)
+
+
+
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[2] GAP[(43*9)+24].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[9]   GAP[(43*9)+25].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[6]    GAP[(43*9)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*9)+27].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[9]   GAP[(43*9)+28].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[6]    GAP[(43*9)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[(43*9)+31].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[9]   GAP[(43*9)+32].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[6]    GAP[(43*9)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(9).dend[2] GAP[(43*9)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[(43*9)+34].target(.5)
+
+InterneuronList.o(9).dend[4] GAP[(43*9)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[9]   GAP[(43*9)+35].target(.5)
+
+InterneuronList.o(9).dend[3] GAP[(43*9)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[6]    GAP[(43*9)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(9).dend[0] GAP[(43*9)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*9)+37].target(.5)
+
+InterneuronList.o(9).dend[5] GAP[(43*9)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*9)+38].target(.5)
+
+InterneuronList.o(9).dend[8] GAP[(43*9)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*9)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(9).dend[1] GAP[(43*9)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*9)+40].target(.5)
+
+InterneuronList.o(9).dend[6] GAP[(43*9)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[2] GAP[(43*9)+41].target(.5)
+
+InterneuronList.o(9).dend[5] GAP[(43*9)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[0] GAP[(43*9)+42].target(.5)
+
+
+
+//000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*10)+0].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[9]   GAP[(43*10)+1].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[6]    GAP[(43*10)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*10)+3].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[9]   GAP[(43*10)+4].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[6]    GAP[(43*10)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*10)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*10)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[9]   GAP[(43*10)+7].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[6]    GAP[(43*10)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*10)+9].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+10].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[9]   GAP[(43*10)+10].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[6]    GAP[(43*10)+11].target(.5)
+
+
+
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[2] GAP[(43*10)+12].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[9]   GAP[(43*10)+13].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[6]    GAP[(43*10)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*10)+15].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[9]   GAP[(43*10)+16].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[6]    GAP[(43*10)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*10)+18].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[9]   GAP[(43*10)+19].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[6]    GAP[(43*10)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[3] GAP[(43*10)+21].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[9]   GAP[(43*10)+22].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[6]    GAP[(43*10)+23].target(.5)
+
+
+
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[2] GAP[(43*10)+24].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[9]   GAP[(43*10)+25].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[6]    GAP[(43*10)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*10)+27].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[9]   GAP[(43*10)+28].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[6]    GAP[(43*10)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[2] GAP[(43*10)+31].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[9]   GAP[(43*10)+32].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[6]    GAP[(43*10)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(10).dend[2] GAP[(43*10)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[(43*10)+34].target(.5)
+
+InterneuronList.o(10).dend[4] GAP[(43*10)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[9]   GAP[(43*10)+35].target(.5)
+
+InterneuronList.o(10).dend[3] GAP[(43*10)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[6]    GAP[(43*10)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(10).dend[0] GAP[(43*10)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*10)+37].target(.5)
+
+InterneuronList.o(10).dend[5] GAP[(43*10)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*10)+38].target(.5)
+
+InterneuronList.o(10).dend[8] GAP[(43*10)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*10)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(10).dend[1] GAP[(43*10)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*10)+40].target(.5)
+
+InterneuronList.o(10).dend[6] GAP[(43*10)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[2] GAP[(43*10)+41].target(.5)
+
+InterneuronList.o(10).dend[5] GAP[(43*10)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[0] GAP[(43*10)+42].target(.5)
+
+
+
+
+
+//00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*11)+0].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[9]   GAP[(43*11)+1].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[6]    GAP[(43*11)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*11)+3].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[9]   GAP[(43*11)+4].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[6]    GAP[(43*11)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*11)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*11)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[9]   GAP[(43*11)+7].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[6]    GAP[(43*11)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*11)+9].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+11].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[9]   GAP[(43*11)+11].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+11].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[6]    GAP[(43*11)+11].target(.5)
+
+
+
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[2] GAP[(43*11)+12].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[9]   GAP[(43*11)+13].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[6]    GAP[(43*11)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*11)+15].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[9]   GAP[(43*11)+16].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[6]    GAP[(43*11)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*11)+18].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[9]   GAP[(43*11)+19].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[6]    GAP[(43*11)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[3] GAP[(43*11)+21].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[9]   GAP[(43*11)+22].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[6]    GAP[(43*11)+23].target(.5)
+
+
+
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[2] GAP[(43*11)+24].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[9]   GAP[(43*11)+25].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[6]    GAP[(43*11)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*11)+27].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[9]   GAP[(43*11)+28].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[6]    GAP[(43*11)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*11)+31].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[9]   GAP[(43*11)+32].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[6]    GAP[(43*11)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(11).dend[2] GAP[(43*11)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[3] GAP[(43*11)+34].target(.5)
+
+InterneuronList.o(11).dend[4] GAP[(43*11)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(12).dend[9]   GAP[(43*11)+35].target(.5)
+
+InterneuronList.o(11).dend[3] GAP[(43*11)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(12).dend[6]    GAP[(43*11)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(11).dend[0] GAP[(43*11)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*11)+37].target(.5)
+
+InterneuronList.o(11).dend[5] GAP[(43*11)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*11)+38].target(.5)
+
+InterneuronList.o(11).dend[8] GAP[(43*11)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*11)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(11).dend[1] GAP[(43*11)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*11)+40].target(.5)
+
+InterneuronList.o(11).dend[6] GAP[(43*11)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[2] GAP[(43*11)+41].target(.5)
+
+InterneuronList.o(11).dend[5] GAP[(43*11)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[0] GAP[(43*11)+42].target(.5)
+
+//0000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*12)+0].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[9]   GAP[(43*12)+1].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[6]    GAP[(43*12)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*12)+3].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[9]   GAP[(43*12)+4].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[6]    GAP[(43*12)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*12)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*12)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[9]   GAP[(43*12)+7].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[6]    GAP[(43*12)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*12)+9].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+12].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[9]   GAP[(43*12)+12].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+12].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[6]    GAP[(43*12)+12].target(.5)
+
+
+
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[2] GAP[(43*12)+12].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[9]   GAP[(43*12)+13].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[6]    GAP[(43*12)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*12)+15].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[9]   GAP[(43*12)+16].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[6]    GAP[(43*12)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*12)+18].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[9]   GAP[(43*12)+19].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[6]    GAP[(43*12)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[3] GAP[(43*12)+21].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[9]   GAP[(43*12)+22].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[6]    GAP[(43*12)+23].target(.5)
+
+
+
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[2] GAP[(43*12)+24].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[9]   GAP[(43*12)+25].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[6]    GAP[(43*12)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*12)+27].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[9]   GAP[(43*12)+28].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[6]    GAP[(43*12)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*12)+31].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[9]   GAP[(43*12)+32].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[6]    GAP[(43*12)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(12).dend[2] GAP[(43*12)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[3] GAP[(43*12)+34].target(.5)
+
+InterneuronList.o(12).dend[4] GAP[(43*12)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[9]   GAP[(43*12)+35].target(.5)
+
+InterneuronList.o(12).dend[3] GAP[(43*12)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[6]    GAP[(43*12)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(12).dend[0] GAP[(43*12)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[9] GAP[(43*12)+37].target(.5)
+
+InterneuronList.o(12).dend[5] GAP[(43*12)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[5] GAP[(43*12)+38].target(.5)
+
+InterneuronList.o(12).dend[6] GAP[(43*12)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[8] GAP[(43*12)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(12).dend[1] GAP[(43*12)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*12)+40].target(.5)
+
+InterneuronList.o(12).dend[6] GAP[(43*12)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[2] GAP[(43*12)+41].target(.5)
+
+InterneuronList.o(12).dend[5] GAP[(43*12)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[0] GAP[(43*12)+42].target(.5)
+
+//0000000000000000000000000000000000000000000000000000000000000000000000
+
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*13)+0].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[9]   GAP[(43*13)+1].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[6]    GAP[(43*13)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*13)+3].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[9]   GAP[(43*13)+4].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[6]    GAP[(43*13)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*13)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*13)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[9]   GAP[(43*13)+7].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[6]    GAP[(43*13)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*13)+9].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+12].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[9]   GAP[(43*13)+12].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+12].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[6]    GAP[(43*13)+12].target(.5)
+
+
+
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[2] GAP[(43*13)+12].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[9]   GAP[(43*13)+13].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[6]    GAP[(43*13)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*13)+15].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[9]   GAP[(43*13)+16].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[6]    GAP[(43*13)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*13)+18].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[9]   GAP[(43*13)+19].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[6]    GAP[(43*13)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[3] GAP[(43*13)+21].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[9]   GAP[(43*13)+22].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[6]    GAP[(43*13)+23].target(.5)
+
+
+
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[2] GAP[(43*13)+24].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[9]   GAP[(43*13)+25].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[6]    GAP[(43*13)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*13)+27].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[9]   GAP[(43*13)+28].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[6]    GAP[(43*13)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[2] GAP[(43*13)+31].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[9]   GAP[(43*13)+32].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[6]    GAP[(43*13)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(13).dend[2] GAP[(43*13)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[3] GAP[(43*13)+34].target(.5)
+
+InterneuronList.o(13).dend[4] GAP[(43*13)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[9]   GAP[(43*13)+35].target(.5)
+
+InterneuronList.o(13).dend[3] GAP[(43*13)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[6]    GAP[(43*13)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(13).dend[0] GAP[(43*13)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[9] GAP[(43*13)+37].target(.5)
+
+InterneuronList.o(13).dend[5] GAP[(43*13)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[5] GAP[(43*13)+38].target(.5)
+
+InterneuronList.o(13).dend[6] GAP[(43*13)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[8] GAP[(43*13)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(13).dend[1] GAP[(43*13)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[3] GAP[(43*13)+40].target(.5)
+
+InterneuronList.o(13).dend[6] GAP[(43*13)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[2] GAP[(43*13)+41].target(.5)
+
+InterneuronList.o(13).dend[5] GAP[(43*13)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(14).dend[0] GAP[(43*13)+42].target(.5)
+
+//000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+0].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(0).dend[2] GAP[(43*14)+0].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+1].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(0).dend[9]   GAP[(43*14)+1].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+2].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(0).dend[6]    GAP[(43*14)+2].target(.5)
+
+
+
+
+
+
+//0 2
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+3].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(1).dend[2] GAP[(43*14)+3].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+4].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(1).dend[9]   GAP[(43*14)+4].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+5].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(1).dend[6]    GAP[(43*14)+5].target(.5)
+
+
+//0 3
+
+
+
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+6].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(2).dend[2] GAP[(43*14)+6].target(.5)
+
+InterneuronList.o(2).dend[4] GAP[(43*14)+7].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(2).dend[9]   GAP[(43*14)+7].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+8].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(2).dend[6]    GAP[(43*14)+8].target(.5)
+
+
+
+//0 4
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+9].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(3).dend[3] GAP[(43*14)+9].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+12].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(3).dend[9]   GAP[(43*14)+12].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+12].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(3).dend[6]    GAP[(43*14)+12].target(.5)
+
+
+
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+12].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(4).dend[2] GAP[(43*14)+12].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+13].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(4).dend[9]   GAP[(43*14)+13].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+14].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(4).dend[6]    GAP[(43*14)+14].target(.5)
+
+
+//0 2
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+15].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(5).dend[2] GAP[(43*14)+15].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+16].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(5).dend[9]   GAP[(43*14)+16].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+17].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(5).dend[6]    GAP[(43*14)+17].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+18].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(6).dend[2] GAP[(43*14)+18].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+19].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(6).dend[9]   GAP[(43*14)+19].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+20].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(6).dend[6]    GAP[(43*14)+20].target(.5)
+
+
+//0 4
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+21].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(7).dend[3] GAP[(43*14)+21].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+22].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(7).dend[9]   GAP[(43*14)+22].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+23].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(7).dend[6]    GAP[(43*14)+23].target(.5)
+
+
+
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+24].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(8).dend[2] GAP[(43*14)+24].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+25].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(8).dend[9]   GAP[(43*14)+25].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+26].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(8).dend[6]    GAP[(43*14)+26].target(.5)
+
+
+
+//0 2
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+27].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(9).dend[2] GAP[(43*14)+27].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+28].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(9).dend[9]   GAP[(43*14)+28].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+29].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(9).dend[6]    GAP[(43*14)+29].target(.5)
+
+
+
+//0 3
+
+
+
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+30].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(10).dend[1] GAP[(43*14)+31].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+32].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(10).dend[9]   GAP[(43*14)+32].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+33].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(10).dend[6]    GAP[(43*14)+33].target(.5)
+
+
+//0 4
+
+InterneuronList.o(14).dend[2] GAP[(43*14)+34].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(11).dend[3] GAP[(43*14)+34].target(.5)
+
+InterneuronList.o(14).dend[4] GAP[(43*14)+35].src(.5)         // GJC 2. proximal to soma 
+InterneuronList.o(11).dend[1]   GAP[(43*14)+35].target(.5)
+
+InterneuronList.o(14).dend[3] GAP[(43*14)+36].src(.5)         // GJC 3. proximal to soma 
+InterneuronList.o(11).dend[6]    GAP[(43*14)+36].target(.5)
+
+
+//0 4
+
+
+InterneuronList.o(14).dend[0] GAP[(43*14)+37].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[9] GAP[(43*14)+37].target(.5)
+
+InterneuronList.o(14).dend[5] GAP[(43*14)+38].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[5] GAP[(43*14)+38].target(.5)
+
+InterneuronList.o(14).dend[6] GAP[(43*14)+39].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(12).dend[8] GAP[(43*14)+39].target(.5)
+
+//0 14
+
+
+
+InterneuronList.o(14).dend[1] GAP[(43*14)+40].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[3] GAP[(43*14)+40].target(.5)
+
+InterneuronList.o(14).dend[6] GAP[(43*14)+41].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[2] GAP[(43*14)+41].target(.5)
+
+InterneuronList.o(14).dend[5] GAP[(43*14)+42].src(.5)         // GJC 1. proximal to proximal 
+InterneuronList.o(13).dend[0] GAP[(43*14)+42].target(.5)
+
+
+
+
+
+for z=0,644 {GAP[z].g(ggap)}  //htan 49
+
+
+
+
+
+
+
+
+
+
+

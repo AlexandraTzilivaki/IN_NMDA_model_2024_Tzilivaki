@@ -1,0 +1,107 @@
+
+// Alexandra Tzilivaki 2023.
+//Initialize NEURON
+	load_file("nrngui.hoc") 
+	load_file("gap.hoc")
+
+        v_init = -70      // vrest   
+	cvode.active(0)     
+	//-----Objects for record data
+	objref cv
+	cv=new CVode(0)
+	tstop=1500//700//1000
+	steps_per_ms=10
+	dt=1/steps_per_ms
+	n=int(tstop/dt)
+ 
+	objref all_msec
+	all_msec = new Vector(n,0)
+
+numberins=15
+objref InterneuronCells[numberins], InterneuronList
+
+
+InterneuronList=new List()
+
+
+xopen("cell.hoc")
+
+for ii=0, numberins-1{
+InterneuronCells[ii]= new InterneuronCell()
+InterneuronList.append(InterneuronCells[ii])
+}
+
+
+xopen("../bash_templates/basic-graphics.hoc")
+addgraph("InterneuronList.o(0).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(1).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(2).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(3).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(4).soma.v(0.5)",-90,50)
+
+addgraph("InterneuronList.o(5).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(6).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(7).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(8).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(9).soma.v(0.5)",-90,50)
+
+addgraph("InterneuronList.o(10).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(11).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(12).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(13).soma.v(0.5)",-90,50)
+addgraph("InterneuronList.o(14).soma.v(0.5)",-90,50)
+
+
+
+// --------------------------------------------------------------------------------------
+//-----------------------------------------------------------------Record and save 
+strdef data_dir, tempstr
+
+
+objref vinsoma[numberins], insomaref[numberins]
+proc record(){
+for cnpv=0,numberins-1{
+vinsoma[cnpv]=new Vector()
+vinsoma[cnpv].record(&InterneuronList.o(cnpv).soma.v(0.5))   
+}
+}
+
+objref fo
+strdef fno
+proc save(){
+sprint(data_dir,"DATA/GAP/control/%d_syns/trial_%d",$1,$2)
+sprint(tempstr,"mkdir -p %s", data_dir)
+system(tempstr)
+for cnpv=0,numberins-1{
+sprint(tempstr, "%s/soma_%d.dat", data_dir, cnpv)
+insomaref[cnpv] = new File()
+insomaref[cnpv].wopen(tempstr)
+vinsoma[cnpv].printf(insomaref[cnpv],"%g\n")
+insomaref[cnpv].close()
+}
+}
+
+xopen("gjs15pvs42gjsperpv.hoc")
+
+
+//for runs=17,15{
+
+//for trials=0,0{
+
+excitatory_synapses=1+1*runs
+
+xopen("vecstimgap.hoc")
+call_vecstim(trials)
+record(excitatory_synapses,trials)
+run()
+save(excitatory_synapses,trials)
+
+print "ALLES KLAR !",runs
+//}
+//}
+
+
+
+
+
+

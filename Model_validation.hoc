@@ -1,0 +1,108 @@
+// For validation of electrophysiological values according to experimental data.
+// Alexandra Tzilivaki
+
+
+//Initialize NEURON
+	load_file("nrngui.hoc") 
+		load_file("gap.hoc")	
+        v_init = -70         // vrest
+	cvode.active(0)     
+	//-----Objects for record data
+	objref cv
+	cv=new CVode(0)
+	tstop=20000//700//2000 // Simulation duration
+	steps_per_ms=10
+	dt=1/steps_per_ms
+	n=int(tstop/dt)
+ 
+	objref all_msec
+	all_msec = new Vector(n,0)
+
+	  
+
+xopen("cell.hoc") // template
+
+ 
+
+numberins=15
+ncell=numberins
+
+objref InterneuronCells[numberins],  InterneuronList, ranlist
+
+InterneuronList=new List()
+
+ranlist=new List()
+
+for i=0,numberins-1{
+InterneuronCells[i]= new InterneuronCell()
+InterneuronList.append(InterneuronCells[i])
+
+
+}
+
+xopen("../bash_templates/basic-graphics.hoc") 
+
+for j=0, 0 {addgraph("InterneuronList.o(j).soma.v(0.5)",-90,50)} //Pyr
+
+
+//////////////////////////////////////////////////
+objref vsoma[numberins], somaref[numberins]
+
+strdef data_dir, tempstr
+
+sprint(data_dir,"DATA/Model_Validation/Rin")
+sprint(tempstr,"mkdir -p %s", data_dir)
+system(tempstr)
+
+proc record(){
+
+for cn=0,0{
+vsoma[cn]=new Vector()
+vsoma[cn].record(&InterneuronList.o(cn).soma.v(0.5))
+}
+}
+objref fo
+strdef fno
+proc save(){
+for cn=0,0{
+sprint(tempstr, "%s/soma_%d_trial_%d.dat", data_dir, cn,$1)
+somaref[cn]= new File()
+somaref[cn].wopen(tempstr)
+vsoma[cn].printf(somaref[cn],"%g\n")
+somaref[cn].close()
+}
+}
+
+
+// --------------Current clamp procedure!
+objref ic_new
+proc applyIClamp(){
+        InterneuronList.o(0).soma {ic_new = new IClamp(0.5)}            
+	ic_new.amp = $1//(nA)
+	ic_new.del=1000//100//100//0
+	ic_new.dur=1000//500//or 500//2000
+	print  "Current injected is: ",ic_new.amp
+}
+
+for runs =0,1	{
+if (runs==0){
+	applyIClamp(-0.4) 
+}else{
+xopen("gjs15pvs42gjsperpv.hoc")
+	applyIClamp(-0.4) 
+}
+record()
+
+run()
+save(runs)
+
+}
+
+//=============================================================================================================
+
+
+
+
+
+
+

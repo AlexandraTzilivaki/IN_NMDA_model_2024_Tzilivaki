@@ -1,0 +1,173 @@
+// Network cell template
+// InterneuronCell
+//written by Alexandra Tzilivaki alexandra_tzilivaki@charite.de
+//reduced morphology designed by Albert Gidon
+
+
+begintemplate InterneuronCell
+public is_art
+public init, topol, basic_shape, subsets, geom, biophys
+public pre_list
+
+
+public soma, dend                
+public all
+
+objref pre_list
+
+proc init() {
+  topol()
+  subsets()
+  geom()
+  biophys()
+  pre_list = new List()
+  
+
+}
+
+create soma, dend[10]                   
+
+proc topol() { local i
+    for i=0,9 connect dend[i](0), soma(1)
+
+  basic_shape() //aleka htan comment 
+}
+
+proc basic_shape() { local i
+  soma{ 
+  nseg=1
+  diam = 10 // Diameter of the soma in micrometers
+    L = 10    // Length of the soma in micrometers, assuming it's spherical
+   // pt3dclear()
+   // pt3dadd(0, 0, 0, diam) // Starting point of the soma
+   // pt3dadd(0, 0, L, diam) // Ending point of the soma
+ 
+}
+// Define each dendrite
+  for i=0, 9 {
+    dend[i] {
+      nseg = 1
+      diam = 1 // Diameter of dend in micrometers
+      L = 250  // Length of dend in micrometers
+      // Calculate the position for each dendrite to radiate from the soma
+      // Assuming a simple radial distribution around a circle for simplicity
+      // Note: This is a basic approximation and might need adjustment for specific geometries
+      x = cos(2*PI*i/10) * L
+      y = sin(2*PI*i/10) * L
+      pt3dclear()
+      pt3dadd(0, 0, 0, diam)  // Starting point (attached to the soma)
+      pt3dadd(x, y, 0, diam)  // Ending point, radiating outward
+    }
+  }
+
+
+
+}
+
+objref all
+proc subsets() { local i
+  objref all
+  all = new SectionList()
+  
+  soma        all.append()
+  dend[0]    all.append()
+  
+  dend[1]  all.append()
+  
+  dend[2]  all.append()
+ 
+  dend[3]    all.append()
+ 
+  dend[4]    all.append()
+  
+  dend[5]    all.append()
+  
+  dend[6]  all.append()
+  
+  dend[7]  all.append()
+ 
+  dend[8]    all.append()
+ 
+  dend[9]    all.append()
+ 
+
+}
+
+proc geom() {
+  soma {  L = 10  diam = 10  }
+
+  dend[0] {  L = 250  diam = 1.0  }
+ 
+  dend[1]  {  L = 250  diam = 1.0  }
+ 
+  dend[2]  {  L = 250  diam = 1.0  }
+
+  dend[3]  {  L = 250  diam = 1.0  }
+  
+  dend[4]  {  L = 250  diam = 1.0  }
+  
+  dend[5] {  L = 250  diam = 1.0  }
+ 
+  dend[6]  {  L = 250  diam = 1.0  }
+ 
+  dend[7]  {  L = 250  diam = 1.0  }
+
+  dend[8]  {  L = 250  diam = 1.0  }
+  
+  dend[9]  {  L = 250  diam = 1.0  }
+  
+}
+
+proc biophys() {
+celsius = 35
+  Rm = 8.6	// Ohm.cm^2 (Migliore value)
+  gka_soma = 0.0075 // for Rinput validation
+
+  soma {
+  nseg=1
+        insert hha_old
+    gnabar_hha_old = 0.07*0.5*2
+    gkbar_hha_old  = 0.0014
+    el_hha_old     = -70
+    // leak conductance
+    insert pas
+    g_pas =  1/8000	
+  }
+
+
+   for i=0,9 dend[i] {
+  nseg=5
+    insert hha_old      
+    gnabar_hha_old = 0.005*2*0.75
+    gkbar_hha_old  = 0.0014
+    el_hha_old     = -70
+    gl_hha_old     = 0
+
+    insert pas      // passive properties
+    g_pas          = 1/8000	
+    }
+    
+    
+  forsec all {
+    
+    e_pas = -70
+    insert pas
+    g_pas = 1/8000	
+    Ra = 120
+    cm = 1.2
+
+  }
+
+
+}
+
+
+
+
+
+
+
+func is_art() { return 0 }
+
+endtemplate InterneuronCell
+
